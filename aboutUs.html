@@ -9,19 +9,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/style_aboutus.css">
+    <link rel="stylesheet" href="css/style_button_lang.css">
 </head>
 
 <body>
-    <!-- Header -->
-     <header>
+  <!-- Header -->
+    <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="logo">
                 <a href="index.html">
                     <img src="assets/img/logo-IRS.svg" width="180" height="80" alt="Logo">
-                <link rel="icon" type="image/jpg" href="assets/icons/IRS.ico"/>
-            </div>
                 </a>
-             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <link rel="icon" type="image/jpg" href="assets/icons/IRS.ico" />
+            </div>
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -29,273 +31,289 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="index.html"><span
+                                data-i18n="header.home">Inicio</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://www.royal.ed.cr/contacto">Matricula</a>
+                        <a class="nav-link" href="https://www.royal.ed.cr/contacto"> <span
+                                data-i18n="header.enrollment">Matricula</span></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Experiencia Educativa
+                            <span data-i18n="header.experience">Experiencia Educativa</span>
                         </a>
-                        <ul class="dropdown-menu">
+                                                <ul class="dropdown-menu">
                             <li><a class="dropdown-item"
-                                    href="https://drive.google.com/file/d/14s_uJWDvkAoZXlrmmq4f_-GFnANaa4in/view">Reglamento</a>
+                                href="https://drive.google.com/file/d/14s_uJWDvkAoZXlrmmq4f_-GFnANaa4in/view">
+                               <span data-i18n="header.regulation">Reglamento</span></a>
                             </li>
                             <li><a class="dropdown-item"
-                                    href="https://drive.google.com/file/d/1SZjsm0VNK9xM4MjhzmWW6rtSAiAecDsU/view">Calendario
-                                    Escolar</a>
+                                    href="https://drive.google.com/file/d/1SZjsm0VNK9xM4MjhzmWW6rtSAiAecDsU/view">
+                                     <span data-i18n="header.school calendar">Calendario Escolar</span></a></a>
                             </li>
+                            <li><a class="dropdown-item" href="#">
+                                 <span data-i18n="header.schedule your visit">Programe su Visita</span></a></a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Excursiones</a></li>
-                            <li><a class="dropdown-item" href="#">Eventos</a></li>
+                            <li><a class="dropdown-item" href="#">
+                                 <span data-i18n="header.excursions">Excursiones</span></a></a></li>
+                   
+                            <li><a class="dropdown-item" href="#">
+                                  <span data-i18n="header.events">Excursiones</span></a></a></li>
+                       
                         </ul>
                     </li>
+                   
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+                        <a class="nav-link active" aria-current="page" href="blog.html"><span
+                                data-i18n="header.blog">Blog</span></a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://wa.me/+50688215872">
+                            <span data-i18n="header.contact">Contacto</span> <i class="fa-brands fa-whatsapp"></i>
+                           </a> 
+                    </li> 
                 </ul>
+
+                <!-- Botón de idioma -->
+                <button id="languageToggle" class="btn-lang">
+                    <img src="https://flagcdn.com/gb.svg" alt="English" width="24" height="18">
+                    <span id="currentLang" style="margin-left: 5px;">ES</span>
+                </button>
+                <!-- Botón de idioma -->
+
             </div>
             </div>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="about-hero">
-        <div class="container">
-            <div class="about-hero-content">
-                <h1>Nuestra Historia y Misión</h1>
-                <p>Formando líderes del mañana con excelencia académica y valores humanos</p>
-            </div>
+ <!-- Hero Section -->
+<section class="about-hero">
+    <div class="container">
+        <div class="hero-content">
+            
         </div>
-    </section>
+    </div>
+    <div class="hero-overlay"></div>
+</section>
 
     <!-- Historia -->
-    <section class="history">
-        <div class="container">
-            <div class="section-title">
-                <h2>Nuestra Historia</h2>
-                <p>Una tradición de excelencia educativa desde 1985</p>
+<section class="history">
+    <div class="container">
+        <div class="section-title">
+            <h2 data-i18n="about_history.title">Nuestra Historia</h2>
+            <p data-i18n="about_history.subtitle">Una tradición de excelencia educativa desde 1997</p>
+        </div>
+        <div class="history-content">
+            <div class="history-text">
+                <h3 data-i18n="about_history.heading">28 años formando generaciones</h3>
+                <p data-i18n="about_history.text1">Fundado en 1997, International Royal School ha crecido desde una pequeña institución local hasta convertirse en un referente de educación internacional. Nuestra misión siempre ha sido proporcionar una educación de calidad que prepare a los estudiantes para los desafíos globales.</p>
+                <p data-i18n="about_history.text2">A lo largo de los años, hemos mantenido nuestro compromiso con la excelencia académica, la innovación educativa y el desarrollo integral de cada estudiante.</p>
+                <a href="https://wa.me/+50688215872" class="btn" data-i18n="about_history.button">Conoce más</a>
             </div>
-            <div class="history-content">
-                <div class="history-text">
-                    <h3>30 años formando generaciones</h3>
-                    <p>Fundado en 1985, International Royal School ha crecido desde una pequeña institución local hasta
-                        convertirse en un referente de educación internacional. Nuestra misión siempre ha sido
-                        proporcionar una educación de calidad que prepare a los estudiantes para los desafíos globales.
-                    </p>
-                    <p>A lo largo de los años, hemos mantenido nuestro compromiso con la excelencia académica, la
-                        innovación educativa y el desarrollo integral de cada estudiante.</p>
-                    <a href="#" class="btn">Conoce más</a>
-                </div>
-                <div class="history-image">
-                    <img src="assets/img/img6.jpg" alt="Historia de International Royal School">
-
-                </div>
+            <div class="history-image">
+                <img src="assets/img/m1.jpg" alt="Historia de International Royal School">
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Misión y Visión -->
-    <section class="mission-vision">
-        <div class="container">
-            <div class="section-title">
-                <h2>Misión y Visión</h2>
-                <p>Los pilares que guían nuestra institución</p>
+<!-- Misión y Visión -->
+<section class="mission-vision">
+    <div class="container">
+        <div class="section-title">
+            <h2 data-i18n="about_mission.title">Misión y Visión</h2>
+            <p data-i18n="about_mission.subtitle">Los pilares que guían nuestra institución</p>
+        </div>
+        <div class="mv-container">
+            <div class="mv-card">
+                <div class="mv-icon">
+                    <i class="fas fa-bullseye"></i>
+                </div>
+                <h3 data-i18n="about_mission.mission_title">Misión</h3>
+                <p data-i18n="about_mission.mission_text">Formar ciudadanos globales mediante una educación integral de excelencia, fomentando el pensamiento crítico, la creatividad y los valores éticos que permitan a nuestros estudiantes contribuir positivamente a la sociedad.</p>
             </div>
-            <div class="mv-container">
-                <div class="mv-card">
-                    <div class="mv-icon">
-                        <i class="fas fa-bullseye"></i>
-                    </div>
-                    <h3>Misión</h3>
-                    <p>Formar ciudadanos globales mediante una educación integral de excelencia, fomentando el
-                        pensamiento crítico, la creatividad y los valores éticos que permitan a nuestros estudiantes
-                        contribuir positivamente a la sociedad.</p>
+            <div class="mv-card">
+                <div class="mv-icon">
+                    <i class="fas fa-eye"></i>
                 </div>
-                <div class="mv-card">
-                    <div class="mv-icon">
-                        <i class="fas fa-eye"></i>
-                    </div>
-                    <h3>Visión</h3>
-                    <p>Ser reconocidos como la institución educativa líder en innovación pedagógica y formación de
-                        personas íntegras, capaces de transformar el mundo con conocimiento, sensibilidad y liderazgo.
-                    </p>
-                </div>
+                <h3 data-i18n="about_mission.vision_title">Visión</h3>
+                <p data-i18n="about_mission.vision_text">Ser reconocidos como la institución educativa líder en innovación pedagógica y formación de personas íntegras, capaces de transformar el mundo con conocimiento, sensibilidad y liderazgo.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Valores -->
-    <section class="values">
-        <div class="container">
-            <div class="section-title">
-                <h2>Nuestros Valores</h2>
-                <p>Los principios que definen nuestra comunidad educativa</p>
+   <!-- Valores -->
+<section class="values">
+    <div class="container">
+        <div class="section-title">
+            <h2 data-i18n="about_values.title">Nuestros Valores</h2>
+            <p data-i18n="about_values.subtitle">Los principios que definen nuestra comunidad educativa</p>
+        </div>
+        <div class="values-grid">
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h4 data-i18n="about_values.excellence_title">Excelencia</h4>
+                <p data-i18n="about_values.excellence_text">Buscamos siempre la más alta calidad en todo lo que hacemos.</p>
             </div>
-            <div class="values-grid">
-                <div class="value-card">
-                    <div class="value-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h4>Excelencia</h4>
-                    <p>Buscamos siempre la más alta calidad en todo lo que hacemos.</p>
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-users"></i>
                 </div>
-                <div class="value-card">
-                    <div class="value-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h4>Respeto</h4>
-                    <p>Valoramos la diversidad y promovemos un ambiente inclusivo.</p>
+                <h4 data-i18n="about_values.respect_title">Respeto</h4>
+                <p data-i18n="about_values.respect_text">Valoramos la diversidad y promovemos un ambiente inclusivo.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-lightbulb"></i>
                 </div>
-                <div class="value-card">
-                    <div class="value-icon">
-                        <i class="fas fa-lightbulb"></i>
-                    </div>
-                    <h4>Innovación</h4>
-                    <p>Fomentamos la creatividad y el pensamiento disruptivo.</p>
+                <h4 data-i18n="about_values.innovation_title">Innovación</h4>
+                <p data-i18n="about_values.innovation_text">Fomentamos la creatividad y el pensamiento disruptivo.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">
+                    <i class="fas fa-hand-holding-heart"></i>
                 </div>
-                <div class="value-card">
-                    <div class="value-icon">
-                        <i class="fas fa-hand-holding-heart"></i>
-                    </div>
-                    <h4>Responsabilidad Social</h4>
-                    <p>Comprometidos con el desarrollo sostenible de nuestra comunidad.</p>
-                </div>
+                <h4 data-i18n="about_values.social_title">Responsabilidad Social</h4>
+                <p data-i18n="about_values.social_text">Comprometidos con el desarrollo sostenible de nuestra comunidad.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Equipo -->
-    <section class="team">
-        <div class="container">
-            <div class="section-title">
-                <h2>Nuestro Equipo Directivo</h2>
-                <p>Profesionales comprometidos con la educación de excelencia</p>
+   <!-- Equipo -->
+<section class="team">
+    <div class="container">
+        <div class="section-title">
+            <h2 data-i18n="about_team.title">Nuestro Equipo Directivo</h2>
+            <p data-i18n="about_team.subtitle">Profesionales comprometidos con la educación de excelencia</p>
+        </div>
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="team-img">
+                    <img src="assets/img/e1.jpg" alt="Directora">
+                </div>
+                <div class="team-info">
+                    <h4>MSc. Mirta Brito de la Cuesta</h4>
+                    <p data-i18n="about_team.director">Directora</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:info@royal.ed.cr"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="team-grid">
-                <div class="team-member">
-                    <div class="team-img">
-                        <img src="assets/img/e1.jpg" alt="Directora">
-                    </div>
-                    <div class="team-info">
-                        <h4>Dra. Elena Rodríguez</h4>
-                        <p>Directora General</p>
-                        <div class="team-social">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
+            <div class="team-member">
+                <div class="team-img">
+                    <img src="assets/img/e2.jpg" alt="Subdirector Académico">
+                </div>
+                <div class="team-info">
+                    <h4>Lic. Carlos Méndez</h4>
+                    <p data-i18n="about_team.subdirector">Subdirector Académico</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:info@royal.ed.cr"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
-                <div class="team-member">
-                    <div class="team-img">
-                        <img src="assets/img/e2.jpg" alt="Subdirector Académico">
-                    </div>
-                    <div class="team-info">
-                        <h4>Lic. Carlos Méndez</h4>
-                        <p>Subdirector Académico</p>
-                        <div class="team-social">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
+            </div>
+            <div class="team-member">
+                <div class="team-img">
+                    <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Coordinadora de Internacionalización">
                 </div>
-                <div class="team-member">
-                    <div class="team-img">
-                        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                            alt="Coordinadora de Internacionalización">
-                    </div>
-                    <div class="team-info">
-                        <h4>Mtra. Laura Fernández</h4>
-                        <p>Coordinadora de Internacionalización</p>
-                        <div class="team-social">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
+                <div class="team-info">
+                    <h4>Lic. Laura Fernández</h4>
+                    <p data-i18n="about_team.coordinator">Coordinadora de Internacionalización</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:info@royal.ed.cr"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Logros -->
-    <section class="achievements">
-        <div class="container">
-            <div class="section-title">
-                <h2>Logros y Reconocimientos</h2>
-                <p>Resultados que nos enorgullecen</p>
+  
+<!-- Logros -->
+<section class="achievements">
+    <div class="container">
+        <div class="section-title">
+            <h2 data-i18n="about_achievements.title">Logros y Reconocimientos</h2>
+            <p data-i18n="about_achievements.subtitle">Resultados que nos enorgullecen</p>
+        </div>
+        <div class="achievements-grid">
+            <div class="achievement-item">
+                <div class="achievement-number">95%</div>
+                <div class="achievement-text" data-i18n="about_achievements.achievement1">de nuestros estudiantes ingresan a universidades de prestigio</div>
             </div>
-            <div class="achievements-grid">
-                <div class="achievement-item">
-                    <div class="achievement-number">95%</div>
-                    <div class="achievement-text">de nuestros estudiantes ingresan a universidades de prestigio</div>
-                </div>
-                <div class="achievement-item">
-                    <div class="achievement-number">30+</div>
-                    <div class="achievement-text">años de excelencia educativa</div>
-                </div>
-                <div class="achievement-item">
-                    <div class="achievement-number">15</div>
-                    <div class="achievement-text">programas internacionales de intercambio</div>
-                </div>
-                <div class="achievement-item">
-                    <div class="achievement-number">2000+</div>
-                    <div class="achievement-text">egresados exitosos</div>
-                </div>
+            <div class="achievement-item">
+                <div class="achievement-number">28+</div>
+                <div class="achievement-text" data-i18n="about_achievements.achievement2">años de excelencia educativa</div>
+            </div>
+            <div class="achievement-item">
+                <div class="achievement-number">15</div>
+                <div class="achievement-text" data-i18n="about_achievements.achievement3">programas internacionales de intercambio</div>
+            </div>
+            <div class="achievement-item">
+                <div class="achievement-number">2000+</div>
+                <div class="achievement-text" data-i18n="about_achievements.achievement4">egresados exitosos</div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+ 
+ <!-- CTA -->
+<section class="about-cta">
+    <div class="container">
+        <h2 data-i18n="about_cta.title">¿Listo para unirte a nuestra comunidad?</h2>
+        <p data-i18n="about_cta.subtitle">Descubre cómo International Royal School puede transformar el futuro de tus hijos.</p>
+        <a href="https://www.royal.ed.cr/contacto" class="btn btn-outline" data-i18n="about_cta.button">Solicitar Información</a>
+    </div>
+</section>
 
-    <!-- CTA -->
-    <section class="about-cta">
-        <div class="container">
-            <h2>¿Listo para unirte a nuestra comunidad?</h2>
-            <p>Descubre cómo International Royal School puede transformar el futuro de tu familia</p>
-            <a href="https://www.royal.ed.cr/contacto" class="btn btn-outline">Solicitar Información</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>International Royal School</h3>
-                    <p>Formando líderes globales con excelencia académica y valores humanos desde 1985.</p>
-                    <div class="footer-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h3>Enlaces Rápidos</h3>
-                    <div class="footer-links">
-                        <ul>
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="about.html">Acerca de</a></li>
-                            <li><a href="academics.html">Programas Académicos</a></li>
-                            <li><a href="admissions.html">Admisiones</a></li>
-                            <li><a href="contact.html">Contacto</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h3>Contacto</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Av. Educación 123, Ciudad</p>
-                    <p><i class="fas fa-phone"></i> +506 1234 5678</p>
-                    <p><i class="fas fa-envelope"></i> info@IRS.edu</p>
+   <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-i18n="footer.about">Sobre Nosotros</h3>
+                <p data-i18n="footer.description">Royal se ubica en Guachipelín de Escazú, 400m norte de Construplaza y ofrece educación de calidad internacional a un costo accesible.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/share/17LAYcwbiw/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/+50688215872"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="mailto:info@royal.ed.cr"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 International Royal School. Todos los derechos reservados.</p>
+            <div class="footer-section">
+                <h3 data-i18n="footer.quick_links">Enlaces Rápidos</h3>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html" data-i18n="footer.home">Inicio</a></li>
+                        <li><a href="blog.html" data-i18n="footer.blog">Blog</a></li>
+                        <li><a href="https://wa.me/+50688215872" data-i18n="footer.contact_us">Contáctanos</a></li>
+                        <li><a href="aboutUs.html" data-i18n="footer.about_us">Acerca de nosotros</a></li>
+                        <li><a href="https://www.facebook.com/share/17LAYcwbiw/?mibextid=wwXIfr" data-i18n="footer.follow_facebook">Síguenos en facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="footer.contact">Contacto</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Av. Principal, Escazú, 400m norte de Construplaza</p>
+                <p><i class="fas fa-phone"></i> +506 2215-2951</p>
+                <p><i class="fas fa-phone"></i> +506 2215-1742</p>
+                <p><i class="fas fa-envelope"></i> info@royal.ed.cr</p>
             </div>
         </div>
-    </footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 International Royal School. <span data-i18n="footer.rights">Todos los derechos reservados</span>.</p>
+        </div>
+    </div>
+</footer>
 
     <script>
         document.getElementById('menuToggle').addEventListener('click', function () {
@@ -303,6 +321,37 @@
             navMenu.classList.toggle('nav-active');
         });
     </script>
+
+    <!-- Script para el cambio de idioma -->
+
+<!-- Script para internacionalización de idiomas -->
+<script src="js/i18n/i18n.js"></script>
+
+<!-- Inicializar i18n -->
+<script>
+    // Inicializar cuando la página cargue
+    document.addEventListener('DOMContentLoaded', function () {
+        i18n.init();
+        
+        // Configurar botón de idioma
+        document.getElementById('languageToggle').addEventListener('click', function () {
+            const newLang = i18n.currentLang === 'es' ? 'en' : 'es';
+            i18n.changeLanguage(newLang);
+            
+            // Actualizar bandera y texto del botón
+            const flag = this.querySelector('img');
+            const text = this.querySelector('#currentLang');
+            
+            if (newLang === 'en') {
+                flag.src = 'https://flagcdn.com/es.svg';
+                text.textContent = 'ES';
+            } else {
+                flag.src = 'https://flagcdn.com/gb.svg';
+                text.textContent = 'EN';
+            }
+        });
+    });
+</script>
 </body>
 
 </html>

@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>International Royal School</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style_index.css">
-   
+    <link rel="stylesheet" href="css/style_cita.css">
+    <link rel="stylesheet" href="css/style_button_lang.css">
+
 </head>
 
 <body>
@@ -19,7 +22,7 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="logo">
                 <img src="assets/img/logo-IRS.svg" width="180" height="80" alt="Logo">
-                <link rel="icon" type="image/jpg" href="assets/icons/IRS.ico"/>
+                <link rel="icon" type="image/jpg" href="assets/icons/IRS.ico" />
             </div>
             <a class="navbar-brand" href="#"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -30,44 +33,67 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="#"><span
+                                data-i18n="header.home">Inicio</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://www.royal.ed.cr/contacto">Matricula</a>
+                        <a class="nav-link" href="https://www.royal.ed.cr/contacto"> <span
+                                data-i18n="header.enrollment">Matricula</span></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Experiencia Educativa
+                            <span data-i18n="header.experience">Experiencia Educativa</span>
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item"
-                                    href="https://drive.google.com/file/d/14s_uJWDvkAoZXlrmmq4f_-GFnANaa4in/view">Reglamento</a>
+                                href="https://drive.google.com/file/d/14s_uJWDvkAoZXlrmmq4f_-GFnANaa4in/view">
+                               <span data-i18n="header.regulation">Reglamento</span></a>
                             </li>
                             <li><a class="dropdown-item"
-                                    href="https://drive.google.com/file/d/1SZjsm0VNK9xM4MjhzmWW6rtSAiAecDsU/view">Calendario
-                                    Escolar</a>
+                                    href="https://drive.google.com/file/d/1SZjsm0VNK9xM4MjhzmWW6rtSAiAecDsU/view">
+                                     <span data-i18n="header.school calendar">Calendario Escolar</span></a></a>
                             </li>
-                               <li><a class="dropdown-item" href="#">Programe su visita</a></li>
+                            <li><a class="dropdown-item" href="#">
+                                 <span data-i18n="header.schedule your visit">Programe su Visita</span></a></a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                             <li><a class="dropdown-item" href="#">Excursiones</a></li>
-                            <li><a class="dropdown-item" href="#">Eventos</a></li>
+                            <li><a class="dropdown-item" href="#">
+                                 <span data-i18n="header.excursions">Excursiones</span></a></a></li>
+                   
+                            <li><a class="dropdown-item" href="#">
+                                  <span data-i18n="header.events">Excursiones</span></a></a></li>
+                       
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="aboutUs.html">Acerca de Nosotros</a>
+                        <a class="nav-link" href="aboutUs.html"> <span data-i18n="header.about">Acerca de
+                                Nosotros</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+                        <a class="nav-link active" aria-current="page" href="blog.html"><span
+                                data-i18n="header.blog">Blog</span></a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://wa.me/+50688215872">
+                            <span data-i18n="header.contact">Contacto</span> <i class="fa-brands fa-whatsapp"></i>
+                           </a> 
+                    </li> 
                 </ul>
-                <img src="assets/img/metaverso.gif" width="70" height="60" alt="Logo">
+
+                <!-- Botón de idioma -->
+                <button id="languageToggle" class="btn-lang">
+                    <img src="https://flagcdn.com/gb.svg" alt="English" width="24" height="18">
+                    <span id="currentLang" style="margin-left: 5px;">ES</span>
+                </button>
+                <!-- Botón de idioma -->
+
                 <div class="classroomvirtual">
                     <a href="https://aulavirtualroyal.virtual-classes-online.com/en/accounts/signin/" class="d-flex"
                         role="search" style="text-decoration: none">
-                        <button class="btn btn-outline-primary" type="">Aula Virtual</button>
+                        <button class="btn btn-outline-primary" type=""><span data-i18n="header.virtual_classroom">Aula
+                                Virtual</span></button>
                     </a>
                 </div>
             </div>
@@ -79,12 +105,10 @@
     <section class="hero bg-gradient">
         <div class="container">
             <div class="hero-content">
-                <p>Curso Lectivo 2026</p>
-                <h1>Formación para cumplir sueños </h1>
-                <p>Preescolar, primaria y secundaria | Robotica e Informatica</p>
+
                 <div class="hero-buttons">
-                    <a href="#" class="btn">Inscripciones</a>
-                    <a href="#" class="btn btn-outline">Ver Programas lectivos</a>
+                    <a href="https://www.royal.ed.cr/contacto" class="btn" data-i18n="hero.button1">Inscripciones</a>
+                    <a href="https://drive.google.com/file/d/1SZjsm0VNK9xM4MjhzmWW6rtSAiAecDsU/view" class="btn btn-outline" data-i18n="hero.button2">Programa lectivo 2026</a>
                 </div>
             </div>
         </div>
@@ -94,8 +118,8 @@
     <section class="cards-carousel">
         <div class="container">
             <div class="section-title">
-                <h2>Nuesta Cultura forma excelencias academicas Internacionales</h2>
-                <p>Valores que Perduran...</p>
+                <h2 data-i18n="carousel.title">Nuesta Cultura forma excelencias academicas Internacionales</h2>
+                <p data-i18n="carousel.subtitle">Valores que Perduran...</p>
             </div>
 
             <div class="carousel-container">
@@ -105,60 +129,56 @@
                         <div class="card-img">
                         </div>
                         <div class="card-content">
-                            <h2>Educación</h2>
-                            <h3>Personalizada</h3>
-                            <p>Verdadera atención personalizada con grupos de máximo 12 estudiantes por aula.</p>
-
+                            <h2 data-i18n="carousel.card1.title">Educación</h2>
+                            <h3 data-i18n="carousel.card1.subtitle">Personalizada</h3>
+                            <p data-i18n="carousel.card1.text">Verdadera atención personalizada con grupos de máximo 12
+                                estudiantes por aula.</p>
                         </div>
                     </div>
 
                     <!-- Tarjeta 2 -->
                     <div class="carousel-card card-mobile">
-                        <div class="card-img">
-                        </div>
+                        <div class="card-img"></div>
                         <div class="card-content">
-                            <h2>Aprendizaje</h2>
-                            <h3>Interactivo</h3>
-                            <p>Educación de calidad a través de la tecnología de punta y los programas de educación
-                                interactiva y virtual más avanzados.</p>
-
+                            <h2 data-i18n="carousel.card2.title">Aprendizaje</h2>
+                            <h3 data-i18n="carousel.card2.subtitle">Interactivo</h3>
+                            <p data-i18n="carousel.card2.text">Educación de calidad a través de la tecnología de punta y
+                                los programas de educación interactiva y virtual más avanzados.</p>
                         </div>
                     </div>
 
                     <!-- Tarjeta 3 -->
                     <div class="carousel-card card-marketing">
-                        <div class="card-img">
-                        </div>
+                        <div class="card-img"></div>
                         <div class="card-content">
-                            <h2>Enseñanza</h2>
-                            <h3>Políglota</h3>
-                            <p>Desarrollo neurolingüístico mediante el aprendizaje de 5 idiomas desde nivel inicial y
-                                formación en español e inglés 100% bilingüe.</p>
+                            <h2 data-i18n="carousel.card3.title">Enseñanza</h2>
+                            <h3 data-i18n="carousel.card3.subtitle">Políglota</h3>
+                            <p data-i18n="carousel.card3.text">Desarrollo neurolingüístico mediante el aprendizaje de 5
+                                idiomas desde nivel inicial y formación en español e inglés 100% bilingüe.</p>
                         </div>
                     </div>
 
-
                     <!-- Tarjeta 4 -->
                     <div class="carousel-card card-seo">
-                        <div class="card-img">
-                        </div>
+                        <div class="card-img"></div>
                         <div class="card-content">
-                            <h2>Enfoque</h2>
-                            <h3>Ambiental</h3>
-                            <p>Somos Bandera Azul Ecológica desde 2013.</p>
+                            <h2 data-i18n="carousel.card4.title">Enfoque</h2>
+                            <h3 data-i18n="carousel.card4.subtitle">Ambiental</h3>
+                            <p data-i18n="carousel.card4.text">Somos Bandera Azul Ecológica desde 2013.</p>
                         </div>
                     </div>
 
                     <!-- Tarjeta 5 -->
                     <div class="carousel-card card-cloud">
-                        <div class="card-img">
-                        </div>
+                        <div class="card-img"></div>
                         <div class="card-content">
-                            <h2>Estímulo</h2>
-                            <h3>Creativo</h3>
-                            <p>Clases que estimulan el arte, el dibujo, el deporte y la música.</p>
+                            <h2 data-i18n="carousel.card5.title">Estímulo</h2>
+                            <h3 data-i18n="carousel.card5.subtitle">Creativo</h3>
+                            <p data-i18n="carousel.card5.text">Clases que estimulan el arte, el dibujo, el deporte y la
+                                música.</p>
                         </div>
                     </div>
+
                 </div>
             </div>
 
@@ -174,108 +194,140 @@
     <section class="features">
         <div class="container">
             <div class="section-title">
-                <h2>Características Principales</h2>
-                <p>Descubre por qué somos la mejor opción para tu proyecto</p>
+                <h2 data-i18n="features.title">Características Principales</h2>
+                <p data-i18n="features.subtitle">Descubre por qué somos la mejor opción para ti.</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fa-solid fa-graduation-cap"></i>
+                        <i class="fa-solid fa-trophy"></i>
                     </div>
-                    <h3>Rápido y Eficiente</h3>
-                    <p>Desarrollamos soluciones optimizadas para máximo rendimiento.</p>
+                    <h3 data-i18n="features.feature1.title">Reconocido y Galardonado</h3>
+                    <p data-i18n="features.feature1.text">Royal, premiado a nivel internacional por su excelencia
+                        académica y logros en el campo de la educación.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-mobile-alt"></i>
+                        <i class="fa-solid fa-earth-americas"></i>
                     </div>
-                    <h3>Completamente Responsive</h3>
-                    <p>Tu sitio se verá perfecto en cualquier dispositivo.</p>
+                    <h3 data-i18n="features.feature2.title">Presencia Internacional</h3>
+                    <p data-i18n="features.feature2.text">El programa de intercambio estudiantil, permite a Royal tener
+                        presencia en países de América Latina y Europa.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-lock"></i>
+                        <i class="fa-brands fa-android"></i>
                     </div>
-                    <h3>Seguro y Confiable</h3>
-                    <p>Implementamos las mejores prácticas de seguridad.</p>
+                    <h3 data-i18n="features.feature3.title">Tecnológico</h3>
+                    <p data-i18n="features.feature3.text">Implementamos las mejores prácticas tecnológicas,
+                        convirtiéndonos en una institución de vanguardia moderna y bien capacitada.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-title">
-                <h2>Lo que Dicen Nuestros Clientes</h2>
-                <p>Testimonios reales de empresas que confiaron en nosotros</p>
-            </div>
-            <div class="testimonial-container">
-                <div class="testimonial">
-                    <p class="testimonial-text">"El equipo de RobletoDesign transformó por completo su presencia
-                        digital. Ahora tiene un sitio web que funciona perfectamente en todos los dispositivos con diseño fresco y moderno,
-                        aumentando sus conversiones en un 100%."</p>
-                    <p class="testimonial-author">- Alejandro Robleto, TechSolutions</p>
-                </div>
+<!-- Testimonials -->
+<section class="testimonials">
+    <div class="container">
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <p class="testimonial-text" data-i18n="testimonials.text">"Hay un futuro de infinitas oportunidades y comienza aquí..."</p>
+                <p>International Royal School</p>
+                <p class="testimonial-author" data-i18n="testimonials.author">- Mirta Brito De La Cuesta -</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Newsletter -->
     <section class="newsletter">
         <div class="container">
             <div class="section-title">
-                <h2>Mantente Actualizado</h2>
-                <p>Suscríbete a nuestro newsletter para recibir tips y noticias</p>
+                <h2 data-i18n="newsletter.title">Mantente Actualizado</h2>
+                <p data-i18n="newsletter.subtitle">Suscríbete a nuestro newsletter para recibir tips y noticias</p>
             </div>
             <form class="newsletter-form">
-                <input type="email" placeholder="Tu correo electrónico" required>
-                <button type="submit">Suscribirse</button>
+                <input type="email" data-i18n-placeholder="newsletter.placeholder" placeholder="Tu correo electrónico"
+                    required>
+                <button type="submit" data-i18n="newsletter.button">Suscribirse</button>
             </form>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Sobre Nosotros</h3>
-                    <p>Especialistas en diseño y desarrollo de software responsive con más de 3+ años de experiencia.</p>
-                    <div class="footer-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h3>Enlaces Rápidos</h3>
-                    <div class="footer-links">
-                        <ul>
-                            <li><a href="#">Inicio</a></li>
-                            <li><a href="#">Servicios</a></li>
-                            <li><a href="#">Portafolio</a></li>
-                            <li><a href="#">Nosotros</a></li>
-                            <li><a href="#">Contacto</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h3>Contacto</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Av. Principal #123, Ciudad</p>
-                    <p><i class="fas fa-phone"></i> +506 234 567 8900</p>
-                    <p><i class="fas fa-envelope"></i> misitio@responsivedesign.com</p>
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-i18n="footer.about">Sobre Nosotros</h3>
+                <p data-i18n="footer.description">Royal se ubica en Guachipelín de Escazú, 400m norte de Construplaza y ofrece educación de calidad internacional a un costo accesible.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/share/17LAYcwbiw/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/+50688215872"><i class="fa-brands fa-whatsapp"></i></a>
+                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="mailto:info@royal.ed.cr"><i class="fas fa-envelope"></i></a> 
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 RobletoDesign. Todos los derechos reservados.</p>
+            <div class="footer-section">
+                <h3 data-i18n="footer.quick_links">Enlaces Rápidos</h3>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html" data-i18n="footer.home">Inicio</a></li>
+                        <li><a href="blog.html" data-i18n="footer.blog">Blog</a></li>
+                        <li><a href="https://wa.me/+50688215872" data-i18n="footer.contact_us">Contáctanos</a></li>
+                        <li><a href="aboutUs.html" data-i18n="footer.about_us">Acerca de nosotros</a></li>
+                        <li><a href="https://www.facebook.com/share/17LAYcwbiw/?mibextid=wwXIfr" data-i18n="footer.follow_facebook">Síguenos en facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="footer.contact">Contacto</h3>
+                <p data-i18n="footer.address" ><i class="fas fa-map-marker-alt"></i> Av. Principal, Escazú, 400m norte de Construplaza</p>
+                <p><i class="fas fa-phone"></i> +506 2215-2951</p>
+                <p><i class="fas fa-phone"></i> +506 2215-1742</p>
+                <p><i class="fas fa-envelope"></i> info@royal.ed.cr</p>
             </div>
         </div>
-    </footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Internal Royal School. <span data-i18n="footer.rights">Todos los derechos reservados</span>.</p>
+        </div>
+    </div>
+</footer>
+   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
+    <script src="js/home.js"></script>
+    <script src="js/jsCode.js"></script>
+
+    <!-- Script para internacionalización  de idiomas-->
+    <script src="js/i18n/i18n.js"></script>
+    <!-- Inicializar i18n -->
+    <script>
+        // Inicializar cuando la página cargue
+        document.addEventListener('DOMContentLoaded', function () {
+            i18n.init();
+
+            // Configurar botón de idioma
+            document.getElementById('languageToggle').addEventListener('click', function () {
+                const newLang = i18n.currentLang === 'es' ? 'en' : 'es';
+                i18n.changeLanguage(newLang);
+
+                // Actualizar bandera y texto del botón
+                const flag = this.querySelector('img');
+                const text = this.querySelector('#currentLang');
+
+                if (newLang === 'en') {
+                    flag.src = 'https://flagcdn.com/es.svg';
+                    text.textContent = 'ES';
+                } else {
+                    flag.src = 'https://flagcdn.com/gb.svg';
+                    text.textContent = 'EN';
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
