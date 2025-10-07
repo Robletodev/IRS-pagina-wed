@@ -354,7 +354,7 @@ nav ul li a:hover:after {
 /* Hero 40% más pequeño */
 .hero {
     background: url('../assets/img/banner_principal.png') no-repeat center center/cover !important;
-    background-size: 75px;
+    background-size: 80px;
     color: white;
     position: relative;
     min-height: 65vh;
