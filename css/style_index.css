@@ -357,7 +357,7 @@ nav ul li a:hover:after {
     background-size: 50px;
     color: white;
     position: relative;
-    min-height: 70vh;
+    min-height: 80vh;
     padding: 2rem 0;
     justify-content: flex-end;
     align-items: flex-end;
